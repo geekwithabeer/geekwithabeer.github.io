@@ -21,12 +21,12 @@ Tested on Ubuntu 18.04 VM with a GPT disk on Hyper-V.
     
     1. Verify the free space is listed:
 
-        Number Start End Size File system Name Flags
-               17.4kB 1049kB 1031kB Free Space
-             1 1049kB 538MB 537MB fat32 EFI System Partition boot, esp
-             2 538MB 794MB 256MB ext2
-             3 794MB 258GB 257GB lvm
-               258GB 344GB 85.9GB Free Space
+            Number Start    End     Size    File system     Name                    Flags
+                   17.4kB   1049kB  1031kB  Free Space
+                 1 1049kB   538MB   537MB   fat32           EFI System Partition    boot, esp
+                 2 538MB    794MB   256MB   ext2
+                 3 794MB    258GB   257GB   lvm
+                   258GB    344GB   85.9GB  Free Space
 
     1. `quit`
     
@@ -36,10 +36,10 @@ Tested on Ubuntu 18.04 VM with a GPT disk on Hyper-V.
 
     1. Verify the new partition table: `$ sudo fdisk -l`
 
-        Device Start End Sectors Size Type
-        /dev/sda1 2048 1050623 1048576 512M EFI System
-        /dev/sda2 1050624 1550335 499712 244M Linux filesystem
-        /dev/sda3 1550336 671088606 669538271 319.3G Linux LVM
+            Device      Start   End         Sectors     Size    Type
+            /dev/sda1   2048    1050623     1048576     512M    EFI System
+            /dev/sda2   1050624 1550335     499712      244M    Linux filesystem
+            /dev/sda3   1550336 671088606   669538271   319.3G  Linux LVM
 
 1. Resize the physical volume:  `$ sudo pvresize /dev/sda3`
 
