@@ -1,3 +1,21 @@
 remote_theme: broccolini/swiss
 
+title: "Geek with a Beer"
+description: "Give me a beer to drink, and I shall move your cloud."
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://geekwithabeer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_repo: geekwithabeer.github.io
+github_username: geekwithabeer
+
+# Optional social link, you can choose from the following options:
+# twitter (default), instagram, medium, or dribbble
+social_link: 
+social_username: 
+
+# Set theme color here
+# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
 theme_color: black
+
+# Build settings
+markdown: kramdown
