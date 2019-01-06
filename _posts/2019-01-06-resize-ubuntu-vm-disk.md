@@ -1,5 +1,7 @@
 ---
+layout: post
 title: "Resize Ubuntu VM disk"
+date:   2019-01-06
 ---
 
 Tested on Ubuntu 18.04 VM with a GPT disk on Hyper-V.
@@ -30,7 +32,7 @@ Tested on Ubuntu 18.04 VM with a GPT disk on Hyper-V.
     
     1. `sudo cfdisk`
 
-        Select the device to resize, select [ Resize ], confirm the new size and hit Enter. Then select [ Write ], type yes. Finally select [ Quit ].
+        Select the device to resize, select **\[ Resize \]**, confirm the new size and hit Enter. Then select **\[ Write \]**, type yes. Finally select **\[ Quit \]**.
 
     1. Verify the new partition table: `$ sudo fdisk -l`
 
