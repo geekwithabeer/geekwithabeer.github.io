@@ -2,6 +2,8 @@
 layout: post
 title: "Resize Ubuntu VM disk"
 date:   2019-01-06
+categories: 
+tags: ["hyper-v", "ubuntu"]
 ---
 
 Tested on Ubuntu 18.04 VM with a GPT disk on Hyper-V.
