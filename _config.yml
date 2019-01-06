@@ -1,11 +1,7 @@
-# title: "Geek with a Beer"
-# description: "Give me a beer to drink, and I shall move your cloud."
+title: "Geek with a Beer"
+description: "Give me a beer to drink, and I shall move your cloud."
 
 remote_theme: chesterhow/tale
 
 permalink:    /:year-:month-:day/:title
 paginate:     10
-
-plugins:
-  - jekyll-paginate
-  - jekyll-remote-theme
