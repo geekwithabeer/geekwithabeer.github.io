@@ -1,11 +1,34 @@
-# title: 
+# title: "Geek with a Beer"
 # description: "Give me a beer to drink, and I shall move your cloud."
 
-# Mandatory settings
+# Site Build Settings
 
-blog_theme: dark # Or use light
-name: "Geek with a Beer"
-paginate: 10
-url: "geekwithabeer.github.io " # add your site url (format: https://example.com)
+# Jekyll-paginate-v2 configuration
+#  pagination:
+#   enabled: true
+#   per_page: 5
+#   permalink: '/page/:num/'
+#   title: ':title - page :num of :max'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
 
-remote_theme: nielsenramon/chalk
+# jekyll-paginate configuration
+paginate:            10
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           'Geek with a Beer'
+description:	       'Give me a beer to drink, and I shall move your cloud.'
+author:              
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#  path: rss-feed.xml
+
+remote_theme: LeNPaul/Lagrange
