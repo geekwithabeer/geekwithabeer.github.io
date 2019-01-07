@@ -1,4 +1,4 @@
 title: "Geek with a Beer"
 description: "Give me a beer to drink, and I shall move your cloud."
 
-remote_theme: rohanchandra/type-theme
+remote_theme: jekyll/minima
