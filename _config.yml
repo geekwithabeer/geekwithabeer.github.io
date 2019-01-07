@@ -1,7 +1,4 @@
 title: "Geek with a Beer"
 description: "Give me a beer to drink, and I shall move your cloud."
 
-remote_theme: jekyll/minima
-
-paginate: 5
-paginate_path: "/page:num/"
+remote_theme: "mmistakes/so-simple-theme"
