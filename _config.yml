@@ -1,5 +1,5 @@
-title: "Geek with a Beer"
-description: "Give me a beer to drink, and I shall move your cloud."
+# title: "Geek with a Beer"
+# description: "Give me a beer to drink, and I shall move your cloud."
 
 # Welcome to Jekyll!
 #
@@ -17,9 +17,9 @@ description: "Give me a beer to drink, and I shall move your cloud."
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: My Awesome Site
+title: "Geek with a Beer"
 email:
-description:
+description: "Give me a beer to drink, and I shall move your cloud."
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
