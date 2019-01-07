@@ -1,8 +1,4 @@
 title: "Geek with a Beer"
 description: "Give me a beer to drink, and I shall move your cloud."
 
-remote_theme: "mmistakes/so-simple-theme"
-
-# Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
-paginate_path: /page:num/
+remote_theme: chesterhow/tale
