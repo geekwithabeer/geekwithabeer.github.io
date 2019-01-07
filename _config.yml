@@ -1,12 +1,8 @@
 title: "Geek with a Beer"
 description: "Give me a beer to drink, and I shall move your cloud."
 
-
-
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
+baseurl:        "/"
 url:            "https://chesterhow.github.io"
 
 # Build settings
