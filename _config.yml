@@ -1,7 +1,8 @@
 title: "Geek with a Beer"
 description: "Give me a beer to drink, and I shall move your cloud."
 
-remote_theme: chesterhow/tale
+remote_theme: "mmistakes/jekyll-theme-basically-basic"
 
-permalink:    /:year-:month-:day/:title
-paginate:     10
+search: true # true, false (default)
+search_full_content: true # true, false (default)
+search_provider: # lunr (default), algolia
