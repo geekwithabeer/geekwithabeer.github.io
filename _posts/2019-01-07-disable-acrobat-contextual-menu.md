@@ -2,6 +2,8 @@
 layout: post
 title: disable-acrobat-contextual-menu
 date: 2019/1/7
+categories:
+tags: ["adobe"]
 ---
 
 1. Open **Windows PowerShell**.
