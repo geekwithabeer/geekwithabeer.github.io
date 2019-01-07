@@ -1,9 +1,8 @@
+# Site settings
 title: "Geek with a Beer"
 description: "Give me a beer to drink, and I shall move your cloud."
-
-# Site settings
 baseurl:        "/"
-url:            "https://chesterhow.github.io"
+url:            "https://geekwithabeer.github.io"
 
 # Build settings
 remote_theme: chesterhow/tale
@@ -16,8 +15,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       5
+paginate:       10
