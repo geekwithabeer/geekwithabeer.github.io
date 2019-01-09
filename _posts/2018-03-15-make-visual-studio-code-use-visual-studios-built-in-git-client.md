@@ -13,11 +13,11 @@ To make VS Code use the Git client already exists in the system:
 1. Add these two path variables:
 
 	```
-	C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw32\bin`
+	C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw32\bin
 	
 	C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\usr\bin
 	```
 
 1. In PowerShell, execute `git config --global credential.helper manager`
 
-1. In VS Code, open User Settings (<kbd>Ctrl + ,</kbd>). Change the value of **git.path** to **C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\Git\\mingw32\\bin\\git.exe**.
+1. In VS Code, open User Settings (<kbd>Ctrl + ,</kbd>). Change the value of `git.path` to `C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\Git\\mingw32\\bin\\git.exe`.
