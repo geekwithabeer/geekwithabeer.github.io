@@ -235,9 +235,9 @@ tags: [powershell, letsencrypt]
     }
     ```
 
-1. Run _wacs.exe_ and follow the prompts. 
+1. Run _wacs.exe_ and follow the prompts :
 
-    1. Select **3: [dns-01] Run script to create and update records** as the validation methods
-    1. Enter **Scripts\PSScript.bat** for path to both the create and delete scripts
-    1. Enter **Scripts\Cloudflare.ps1 create {Identifier} {RecordName} {Token} _you@company.com_ _your-cloudflare-api-key_** for the parameters for the create script
-    1. Enter **Scripts\Cloudflare.ps1 delete {Identifier} {RecordName} {Token} _you@company.com_ _your-cloudflare-api-key_** for the parameters for the delete script
+    1. Select `3: [dns-01] Run script to create and update records` as the validation methods
+    1. Enter `Scripts\PSScript.bat` for path to both the create and delete scripts
+    1. Enter `Scripts\Cloudflare.ps1 create {Identifier} {RecordName} {Token} you@company.com your-cloudflare-api-key` for the parameters for the create script
+    1. Enter `Scripts\Cloudflare.ps1 delete {Identifier} {RecordName} {Token} you@company.com your-cloudflare-api-key` for the parameters for the delete script
