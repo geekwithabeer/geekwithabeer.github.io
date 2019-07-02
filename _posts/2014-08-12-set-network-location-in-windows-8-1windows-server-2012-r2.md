@@ -6,7 +6,7 @@ categories:
 tags: [network location, Uncategorized, windows 8.1, windows server 2012 r2]
 ---
 
-1. In Registry Editor, navigate to the location below: `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkListProfiles`.
+1. In Registry Editor, navigate to the location below: `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles`.
 
 1. Double click/tap on the Profiles key in the left pane to expand it.
 
