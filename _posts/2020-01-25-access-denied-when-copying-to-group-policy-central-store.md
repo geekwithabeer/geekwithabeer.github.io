@@ -1,0 +1,1 @@
+If an access denied error ("You need permission to perform this action") when copying files to the group policy central store (**\\contoso.com\SYSVOL\contoso.com\Policies\PolicyDefinitions**), copy to the local destination (**C:\Windows\SYSVOL\sysvol\contoso.com\Policies\PolicyDefinitions**) instead.
