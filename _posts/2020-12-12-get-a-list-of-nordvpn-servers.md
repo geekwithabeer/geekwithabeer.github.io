@@ -4,5 +4,5 @@ Since NordVPN's Firefox extension is anything but stable, I needed a way of impo
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $country = 'United States'
 $servers = Invoke-WebRequest 'https://nordvpn.com/api/server' | ConvertFrom-Json
-$servers | where country -eq $country | Sort-Object -Property load | Select-Object domain -First 10 | ForEach-Object { Write-Host (-join($_.domain, ":89:VPN_USERNAME:VPN_PASSWORD")) }
+$servers | Where-Object { $_.country -eq $country -and $_.features.proxy_ssl -eq $TRUE } | Sort-Object -Property load | Select-Object -First 10 | ForEach-Object { Write-Host (-join("https://VPN_USERNAME:VPN_PASSWORD@", $_.domain, ":89?title=", $_.domain.replace('.nordvpn.com', ''))) }
 ```
