@@ -6,7 +6,7 @@ categories:
 tags: [git, Uncategorized, visual studio, visual studio code]
 ---
 
-Visual Studio 2017 comes with a Git client, Git for Windows. However, as it is installed within Visual Studio 2017, Visual Studio Code is not aware of its existence and complains about the lack of a Git client.
+Visual Studio 2017 and later comes with a Git client, Git for Windows. However, as it is installed within Visual Studio 2017, Visual Studio Code is not aware of its existence and complains about the lack of a Git client.
 
 To make VS Code use the Git client already exists in the system:
 
@@ -14,10 +14,12 @@ To make VS Code use the Git client already exists in the system:
 
 	```
 	C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw32\bin
-	
 	C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\usr\bin
 	```
 
-1. In PowerShell, execute `git config --global credential.helper manager` and `git config --global http.sslCAinfo "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw32\ssl\certs\ca-bundle.crt"`.
-
-1. In VS Code, open User Settings (<kbd>Ctrl + ,</kbd>). Change the value of `git.path` to `C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\Git\\mingw32\\bin\\git.exe`. This is not necessary for recent versions of VS Code.
+1. In PowerShell, execute 
+	```
+	git config --global credential.helper manager
+	git config --global http.sslCAinfo "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw32\ssl\certs\ca-bundle.crt"
+	git config --global core.editor notepad
+	```
