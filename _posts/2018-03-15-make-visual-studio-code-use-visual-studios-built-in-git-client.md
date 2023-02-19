@@ -19,7 +19,7 @@ To make VS Code use the Git client already exists in the system:
 
 1. In PowerShell, execute 
 	```
-	git config --global credential.helper manager-core
+	git config --global credential.helper manager
 	git config --global http.sslCAinfo "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw64\ssl\certs\ca-bundle.crt"
 	git config --global core.editor notepad
 	```
