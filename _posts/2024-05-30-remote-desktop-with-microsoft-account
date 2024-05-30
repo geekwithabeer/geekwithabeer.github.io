@@ -1,0 +1,13 @@
+To connect to a Windows 11 PC with Remote Desktop using Microsoft Account
+
+1. On the remote computer, open PowerShell and enter
+
+    ```
+    runas /u:MicrosoftAccount\your@email.com cmd.exe
+    ```
+
+1. (Optional) On the local computer, open PowerShell and enter
+
+    ```
+    Set-ItemProperty -Path HKLM:SYSTEM\CurrentControlSet\Services\Tcpip\Parameters -Name Domain -Value "domain.com" -Type String
+    ```
