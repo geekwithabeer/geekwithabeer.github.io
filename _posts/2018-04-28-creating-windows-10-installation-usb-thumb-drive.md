@@ -8,7 +8,8 @@ tags: [Uncategorized, windows 10]
 
 Starting with around Windows 10 1709, *install.wim* has become too big to fit under FAT32 required for EFI boot. Luckily, Windows 10 1709 also includes the capability of making multiple volumes in any USD thumb drives, not just those exposing as non-removable (such as SanDisk Ultra 16GB).
 
-1. In **PowerShell**, type (where * is the number of the USB disk):
+1. Open **PowerShell** as administrator, and start `diskpart`:
+1. In **diskpart**, run the following (where * is the disk number of the USB disk):
 
 	```powershell
 	diskpart
@@ -24,9 +25,14 @@ Starting with around Windows 10 1709, *install.wim* has become too big to fit un
 	assign letter=I
 	exit
 	```
-	
-1. In File Explorer, navigate to the root of the Windows ISO, and copy the *boot* and *efi* directories and the *bootmgr* and *bootmgr.efi* files to the *WinPE* volume.
 
-1. Create a *sources* directory in the *WinPE* volume and copy *sources\boot.wim* from the Windows ISO to it.
+1. In **PowerShell**, run the following (where **G:\** is where the Windows ISO is mounted):
 
-1. Copy everything in the Windows ISO to the *Images* volume.
+	```powershell
+ 	mkdir P:\sources
+ 	robocopy G:\boot P:\boot /MIR
+  	robocopy G:\efi P:\efi /MIR
+ 	robocopy G:\sources P:\sources boot.wim
+  	robocopy G:\ P:\ bootmgr bootmgr.efi
+  	robocopy G:\ I:\ /MIR
+ 	```
